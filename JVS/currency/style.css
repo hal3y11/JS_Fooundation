@@ -1,0 +1,13 @@
+label {
+    width: 100px;
+    display: inline-block;
+}
+#output {
+    min-height: 50px;
+    border: 1px solid black; 
+    width:277px;
+}
+button{
+    margin-right: 1em;
+    width: 79px;
+}

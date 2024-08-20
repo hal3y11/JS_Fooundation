@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo tickets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+
+<body>
+
+        <fieldset>
+            <!-- Name -->
+            <p class="field">
+                <label for="name" class="label">Name:</label>
+                <input class="input" type="text" id="name" placeholder="Name">
+            </p>
+
+            <!-- Tickets -->
+            <p class="field">
+                <label for="animal" class="label">Feeding session:</label>
+                <select id="animal">
+                    <option value="Penguins">Penguins</option>
+                    <option value="Monkeys">Monkeys</option>
+                    <option value="Elephants">Elephants</option>
+                    <option value="Giraffes">Giraffes</option>
+                </select>
+            </p>
+            <!-- Ticket cost -->
+            <p class="field">
+                <label for="ticketCost" class="label">Ticket cost:</label>
+                <span id="ticketCost">£0.00 </span>
+            </p>
+
+            <!-- Tickets required -->
+            <p class="field">
+                <label for="ticketsRequired" class="label">Tickets required:</label>
+                <input class="input" type="number" id="ticketsRequired" min=1 placeholder="Tickets" required>
+            </p>
+
+            <!-- Delivery method -->
+            <p class="field">
+                <label for="delivery" class="label">Delivery method: </label>
+            </p>
+
+            <p>
+                <input type="radio" id="eticket" name="delivery" value="eticket" checked>
+                <label class="radio" for="eticket">e-ticket</label>
+            </p>
+
+            <p>
+                <input type="radio" id="collect" name="delivery" value="collect">
+                <label class="radio" for="collect">Collect</label>
+            </p>
+
+            <p>
+                <input type="radio" id="post" name="delivery" value="post">
+                <label class="radio" for="post">Post</label>
+            </p>
+
+            <!-- Delivery cost -->
+            <p class="field">
+                <label for="deliveryCost" class="label">Delivery cost:</label>
+                <span id="deliveryCost">£0.00 </span>
+            </p>
+
+            <!-- button -->
+            <p class="field">
+                <button name="order" id="order" class="button is-link">Order</button>
+            </p>
+
+            <!-- Ticket details -->
+            <p class="field">
+                <label for="ticketDetails" class="label">Ticket details:</label>
+                <span id="ticketDetails"></span>
+            </p>
+  
+    <p id="output"></p>
+</body>
+
+</html>

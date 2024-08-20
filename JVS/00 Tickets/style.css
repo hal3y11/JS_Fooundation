@@ -1,0 +1,11 @@
+body {
+    margin: 0.75rem;
+}
+
+.field {
+    margin-top: 1rem;
+}
+
+.label:not(:last-child) {
+    margin-bottom: 0;
+}
